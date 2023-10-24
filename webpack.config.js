@@ -11,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].[contenthash].js",
         clean: true,
-        assetModuleFilename: "[name][exe]"
+        assetModuleFilename: "[name][ext]"
 
     },
     devServer: {
@@ -34,7 +34,7 @@ module.exports = {
             use: 'handlebars-loader',
         },{
             test:/\.(png|svg|jpg|jpeg|gif)$/i,
-            type:"asset/resource"
+            use: ['file-loader']
         }
         ]
     },

@@ -5,3 +5,11 @@ h1{
     color: #13151a;
     text-align: center;
 }
+.jokeDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & p{
+        color: red;
+    }
+}

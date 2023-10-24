@@ -32,6 +32,9 @@ module.exports = {
         {
             test: /\.hbs$/,
             use: 'handlebars-loader',
+        },{
+            test:/\.(png|svg|jpg|jpeg|gif)$/i,
+            type:"asset/resource"
         }
         ]
     },
